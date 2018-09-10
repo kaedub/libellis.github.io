@@ -1,23 +1,26 @@
-.navbar {
-    background-color: #141513;
+.nav {
     margin-bottom: 0;
     border-radius: 0;
 }
 
-.navbar a {
-  font-size: 28px;
+.navbar-nav a {
+  font-size: 18px;
+  color: #FFFCF6;
 }
 
-@media (min-width:1025px) { 
-  .container { 
-    width: 80% !important;} 
+.navbar-nav i {
+  color: #FFFCF6;
 }
 
+section {
+  font-family: 'Montserrat', sans-serif;
+}
 .landing-section {
   background-image: url("./resources/bg-img.jpg");
   background-color: #474440;
-  margin-bottom: 0;
   color: #FFFCF6;
+  margin-bottom: 0;
+  color: rgba(255, 252, 246, 0.653);
   padding-bottom: 0; 
 }
 
@@ -40,6 +43,7 @@
 }
 
 .portrait {
+  border: 10px solid #1E1C19;
   animation-duration: 4s;
   animation-name: fadein;
   margin-top: 50px;
@@ -59,6 +63,7 @@
 
 .about-section p {
   font-size: 18px;
+  text-align: left;
 }
 
 .skills-section {
@@ -82,8 +87,10 @@
 
 .skill-box img {
   transition: 5s;
-  padding-top: 20px;
+  margin-top: 10px;
+  border: 10px solid #1E1C19;
   width: 250px;
+  height: 250px;
 }
 
 .skill-box img:hover {
@@ -99,6 +106,7 @@
   padding-bottom: 70px;
 }
 .resume-img {
+  display: inline-block;
   transition: 1s;
   width: 450px;
 }
@@ -115,9 +123,12 @@
   padding-top: 50px;
   padding-bottom: 70px;
 }
+.contact-section h1 {
+  text-align: center;
+}
 
 footer {
   background-color: #35333C;
   color: #FFFCF6;
-  padding: 10px;
+  text-align: right;
 }
