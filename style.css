@@ -2,86 +2,122 @@
     background-color: #141513;
     margin-bottom: 0;
     border-radius: 0;
-  }
+}
 
-  .landing-section {
-    background-image: url("./resources/bg-img.jpg");
-    margin-bottom: 0;
-    color: #FFFCF6;
-    padding-bottom: 0; 
-  }
+.navbar a {
+  font-size: 28px;
+}
 
-  .landing-container {
-    background-color: #474440;
-    height: 100%;
-    text-align: center;
-    padding-bottom: 70px;
-  }
+@media (min-width:1025px) { 
+  .container { 
+    width: 80% !important;} 
+}
 
-  .portrait {
-      margin-top: 50px;
-      margin-bottom: 50px;  
+.landing-section {
+  background-image: url("./resources/bg-img.jpg");
+  background-color: #474440;
+  margin-bottom: 0;
+  color: #FFFCF6;
+  padding-bottom: 0; 
+}
+
+.landing-container {
+  background-color: #474440;
+  animation-duration: 3s;
+  animation-name: fadein;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .about-section {
-    background-color: #1E1C19;
+  to {
+    opacity: 1;
+  }
+}
+
+.portrait {
+  animation-duration: 4s;
+  animation-name: fadein;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+.about-section {
+  background-color: #1E1C19;
+  color: #FFFCF6;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 70px;      
+}
+
+.about-section h1 {
+  padding-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+}
+
+.skills-section {
+    background-color: #35333C;
     color: #FFFCF6;
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 70px;      
-  }
-  
-  .about-section h1 {
-    padding-bottom: 20px;
-  }
+    padding-bottom: 50px;
+}
 
-  .about-section p {
-    font-size: 18px;
-  }
+.skill-box {
+    padding: 35px;
+    display: inline-block;
+}
 
-  .skills-section {
-      background-color: #35333C;
-      color: #FFFCF6;
-      text-align: center;
-      padding-top: 40px;
-      padding-bottom: 50px;
-  }
+.skill-box div {
+  /* background-color: #5E5A57; */
+  display: 100%;  
+  padding: 25px;
+}
 
-  .skill-box {
-      padding: 35px;
-      display: inline-block;
-  }
+.skill-box img {
+  transition: 5s;
+  padding-top: 20px;
+  width: 250px;
+}
 
-  .skill-box div {
-    /* background-color: #5E5A57; */
-    display: 100%;  
-    padding: 25px;
-  }
+.skill-box img:hover {
+  transition: 2s;
+  opacity: 0;
+}
 
-  .skill-box img {
-      padding-top: 20px;
-      width: 250px;
-  }
+.resume-section {
+  text-align: center;
+  background-color: #474440;
+  color: #FFFCF6;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.resume-img {
+  transition: 1s;
+  width: 450px;
+}
 
-  .resume-section {
-    text-align: center;
-    background-color: #474440;
-    color: #FFFCF6;
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-  .resume-img {
-    width: 500px;
-  }
+.resume-img:hover {
+  transition: 1s;
+  opacity: 0.6;
+  width: 520px;
+}
 
-  .contact-section {
-    color: #FFFCF6;
-    background-color: #1E1C19;
-    padding-top: 50px;
-    padding-bottom: 70px;
-  }
-  
-  footer {
-    background-color: #35333C;
-    color: #FFFCF6;
-    padding: 10px;
-  }
+.contact-section {
+  color: #FFFCF6;
+  background-color: #1E1C19;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+footer {
+  background-color: #35333C;
+  color: #FFFCF6;
+  padding: 10px;
+}
