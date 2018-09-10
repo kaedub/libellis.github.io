@@ -77,12 +77,13 @@ section {
 .skill-box {
     padding: 35px;
     display: inline-block;
+    border: 1px solid black;
 }
 
 .skill-box div {
   /* background-color: #5E5A57; */
+  border: 1px solid black;
   display: 100%;  
-  padding: 25px;
 }
 
 .skill-box img {
