@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!-- Bootstrap Offline -->
-    <!-- <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.min.css"> -->
-
-    <!-- Site stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-    <title>Memory with GIFs</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Start Menu -->
-    <section id="menu-screen">
-        <div class="container menu">
-            <h1>Memory</h1>
-            <h3>with Trippy GIFs</h3>
-            <!-- <iframe src="https://giphy.com/embed/3o6UBigHdm2Qf1BtiE" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
-            <div class="menu-image-wrapper">
-                <img id="menu-image" src="https://media.giphy.com/media/3o6UBigHdm2Qf1BtiE/giphy.gif" alt="">
-            </div>
-            <br>
-            <button class="btn-lg">Start Game</button>
+
+<nav class="navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">Kevin Welch</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="jumbotron landing-section" id="home">
+  <div class="container landing-container">
+    <h1>Kevin Welch</h1>
+    <img class="portrait img-circle" src="./resources/self-portrait.jpeg" alt="PORTRAIT">
+    <h2>Junior Software Engineer</h2>
+  </div>
+</section>
+
+<section class="container-fluid about-section" id="about">
+  <div class="container">
+    <h1>About Me</h1><br>
+    <p>I'm a entry-level software engineer with 3 years experience in robotics a programmer and technician. 
+      Python is my comfort zone but I can do some cool things with Arduino and electronics as well. I am
+      in the process of learning professional web development. I thrive in team settings and always 
+      enjoy a challenge.
+    </p>
+    <p>Outside of work my passions include music, cooking, coding, traveling, and skiing. Coding I picked one summer break
+      during college, where I built a Snake replica in Python's Pygame for fun. I have been composing electronic
+      music under the name Isturite for a number of years now. Skiing was my original passion. I first learned at
+      two years old and was a competitive ski racer until I was sixteen. Enjoying cooking for me is just a means 
+      to always eat great food. Traveling new places is always fun for me, even when things go wrong, I love an adventure.
+      I especially like traveling alone and my next destination is likely Taiwan.
+    </p>
+  </div>
+  
+
+</section>
+
+<section class="container-fluid skills-section">    
+  <h1>My Skills</h1><br>
+  <div class="row">
+    <div class="col-sm-4 skill-box">
+      <div>
+        <h3>Python</h2>
+        <img src="./resources/python-logo.png" class="skill-img img-circle" alt="PYTHON">   
+      </div>
+    </div>
+    <div class="col-sm-4 skill-box">
+      <div>
+        <h3>Arduino</h2>
+        <img src="./resources/arduino-logo.png"" class="skill-img img-circle" alt="ARDUINO">
+      </div>
+    </div>
+    <div class="col-sm-4 skill-box"> 
+      <div>
+        <h3>Javascript</h2>
+        <img src="./resources/javascript-logo.png" class="skill-img img-circle" alt="JAVASCRIPT">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-fluid resume-section" id="resume">
+  <h1>Resume</h1>
+  <div>
+    <h3><a href="./resources/Kevin-Welch-Resume-2018.pdf" download>Download My Resume</a></h3>
+    <img class="resume-img" src="./resources/resume.png">
+  </div>
+  
+</section>
+
+<section class="container-fluid contact-section" id="contact">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <form action="mailto:kaedub16@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+          <label for="pwd">Name</label>
+          <input type="text" class="form-control" id="pwd">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+          <label for="message">Message</label>
+          <input type="textarea" class="form-control" id="message">
         </div>
-    </section>
-    <!-- Game Screen -->
-    <section id="game-screen">
-        <div id="gameboard">
-            <!-- <div class="card"><img src="https://images.pexels.com/photos/376533/pexels-photo-376533.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
-            -->
-            <!-- <div class="scene scene--card">
-                <div class="card">
-                    <div class="card__face card__face--front">front</div>
-                    <div class="card__face card__face--back">back</div>
-                </div>
-            </div>
-            <div class="scene scene--card">
-                <div class="card">
-                    <div class="card__face card__face--front">front</div>
-                    <div class="card__face card__face--back">back</div>
-                </div>
-            </div>
-            <div class="scene scene--card">
-                    <div class="card">
-                        <div class="card__face card__face--front">front</div>
-                        <div class="card__face card__face--back">back</div>
-                    </div>
-            </div>
-            <div class="scene scene--card">
-                    <div class="card">
-                        <div class="card__face card__face--front">front</div>
-                        <div class="card__face card__face--back">back</div>
-                    </div>
-            </div>
-            <div class="scene scene--card">
-                    <div class="card">
-                        <div class="card__face card__face--front">front</div>
-                        <div class="card__face card__face--back">back</div>
-                    </div>
-            </div> -->
-        </div>
-        <br>
-        <div class="game-btns">
-            <button class="btn btn-lg" onclick="runGame()">Reset</button>
-            <button class="btn btn-lg" onclick="returnToMenu()">Quit</button>
-        </div>
-    </section>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="client.js"></script>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form> 
+  </div>
+</section>
+
+<footer class="container-fluid footer">
+  <p>Kevin Welch 2018</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
